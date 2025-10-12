@@ -5,8 +5,11 @@
 
 html,
 body {
-  max-width: 95vw;
   margin: 0 auto;
+}
+
+.container {
+  width: 100%;
 }
 
 * {
