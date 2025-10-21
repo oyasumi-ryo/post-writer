@@ -5,17 +5,26 @@ import Link from "next/link";
 export default function SiteFooter() {
   return(
     <footer>
-      <div className="container py-10 md:py-0 md:h-24 mx-auto">
+      <div className="container py-10 md:py-0 md:h-20 mx-auto">
         <p className="text-center text-sm">
           Built by {""}
           <Link 
             href={siteConfig.links.x} 
-            className="underline underline-offset-4"
+            className="underline underline-offset-4 font-medium"
+            target="_blank"
+            rel="noreferrer"
           >
             oyasumi-ryo
           </Link>
           . Hosted on {""}
-          <Link href={"https://vercel.com"}>Vercel</Link>
+          <Link 
+            href={"https://vercel.com"}
+            className="underline  underline-offset-4 font-medium"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Vercel
+          </Link>
         </p>
       </div>
     </footer>
